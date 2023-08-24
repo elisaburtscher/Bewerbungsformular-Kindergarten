@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fertig {
+            background-color: rgb(135, 220, 135);
+            color: black;
+            text-decoration:none;
+            text-decoration:overline
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let form_data=new URL(window.location).searchParams
+        //document.write(`Name: ${form_data.get("Vorname")}`)
+        document.write("Name: " + form_data.get("Vorname") + "<br>") 
+        document.write("Nachname: " + form_data.get ("Nachname") + "<br>")
+        document.write("Anschrift: " + form_data.get ("Anschrift") + "<br>")
+        document.write("Email: " + form_data.get ("Email") + "<br>")
+        document.write("Telefonnummer: " + form_data.get ("Telefonnummer") + "<br>")
+        document.write("Geburtsdatum: " + form_data.get ("Geburtsdatum") + "<br>")
+        document.write("Wie haben Sie von der Stelle erfahren?: " + form_data.get ("erfahren_durch") + "<br>")
+        document.write("Berufserfahrung: " + form_data.get ("Berufserfahrung") + "<br>")
+        document.write("Schulabschluss: " + form_data.getAll ("Schulabschluss") + "<br>")
+        document.write("Studium: " + form_data.getAll ("Studium") + "<br>")
+        document.write("Fähigkeiten: " + form_data.getAll ("faehigkeiten") + "<br>")
+
+/*<p>
+            <label for="fname">Fähigkeiten:</label><br>
+
+            <input type="checkbox" id="UmgangKinder;" name="UmgangKinder">
+            <label for="fname">guter Umgang mit Kindern</label><br>
+
+            <input type="checkbox" id="NeueSpiele" name="NeueSpiele" >
+            <label for="fname">überlege mir gerne neue Spiele</label><br>
+
+            <label for="fname">Geduld</label>
+            <input type="range" id="Geduld"><br name="Geduld">
+
+            <label for="fname">sonstiges:</label>
+            <input class="form" type="text" id="sonstiges" name="sonstiges"><br>
+        </p>*/
+
+    
+
+    </script>     
+    <input type="button" value="Zurück" onclick="history.back()" style="background-color: rgb(254, 133, 133)
+    ;"> 
+    <div style="border-color: black;">
+        <a href="fertig.html" class="fertig">Fertig</a>
+    </div>
+    
+
+</body>
+</html>

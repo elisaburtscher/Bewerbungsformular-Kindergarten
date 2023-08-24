@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(184, 224, 171);
+        }
+        .form{
+            background-color: rgb(158, 209, 158);
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <h1>Bewergungsformular Kindergartenpädagogen</h1>
+
+    <form action ="ueberpruefen.html" method="get">
+        <p>
+            <label for="fname">Vorname:</label><br>
+            <input class="form" type="text" id="Borname" required name="Vorname"> 
+        </p>
+        <p>
+            <label for="fname">Nachname:</label><br>
+            <input class="form" type="text" id="Nachname" required name="Nachname">
+        </p>
+        <p>
+            <label for="fname">Anschrift:</label><br>
+            <input class="form" type="text" id="Anschrift" required name="Anschrift">
+        </p>
+        <p>
+            <label for="fname">Email:</label><br>
+            <input class="form" type="email" id="Email" required name="Email">
+        </p>
+        <p>
+            <label for="fname">Telefonnummer:</label><br>
+            <input class="form" type="number" id="Telefonnummer" required name="Telefonnummer">
+        </p>
+        <p>
+            <label for="fname">Geburtsdatum:</label><br>
+            <input class="form" type="date" id="Geburtsdatum" required name="Geburtsdatum">
+        </p>
+        <p>
+            Wie haben Sie von der Stelle erfahren? <br>
+            <select class="form" required name="erfahren_durch">
+                <option value=""></option>
+                <option value="FreundIn/Bekannte(r)">
+                    FreundIn/Bekannte(r)
+                </option>
+                <option value="Familienmitglied">
+                    Familienmitglied
+                </option>
+                <option value="Online-Anzeige">
+                    Online-Anzeige
+                </option>
+                <option value="sonstiges">
+                    sonstiges
+                </option>
+            </select>
+        </p>
+        <p>
+            <label for="fname">Berufserfahrung:</label><br>
+            <input class="form" type="number" min="0" id="Berufserfahrung" required name="Berufserfahrung">
+        </p>
+        <p>
+            Schulabschluss <br>
+            <select class="form" name="Schulabschluss" required>
+                <option value=""></option>
+                <option value="AHS">
+                    AHS
+                </option>
+                <option value="BHS">
+                    BHS
+                </option>
+            </select>
+        </p>
+        <p>
+            <label for="fname">Studium:</label><br>
+            <input type="radio" id="Nein" value="kein Studium" name="Studium" required>
+            <label for="fname">Nein</label><br>
+            <input type="radio" id="Ja" value="abgeschlossenes Studium" name="Studium" required>
+            <label for="fname">Ja</label>
+            <label for="fname"></label>
+            <input class="form" type="text" id="Studium" name="Studienrichtung"><br>
+        </p>
+        <p>
+            <label for="fname">Fähigkeiten:</label><br>
+
+            <input type="checkbox" id="UmgangKinder;" name="faehigkeiten">
+            <label for="fname">guter Umgang mit Kindern</label><br>
+
+            <input type="checkbox" id="NeueSpiele" name="faehigkeiten" >
+            <label for="fname">überlege mir gerne neue Spiele</label><br>
+
+            <label for="fname">Geduld</label>
+            <input type="range" id="Geduld"><br name="Geduld">
+
+            <label for="fname">sonstiges:</label>
+            <input class="form" type="text" id="sonstiges" name="sonstiges"><br>
+        </p>
+
+        <input  id="abschicken" type="submit" value="save" style="background-color: rgb(74, 116, 223);">
+
+    </form>
+
+
+
+
+
+</body>
+</html>
